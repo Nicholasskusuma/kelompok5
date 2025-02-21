@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    
+    <!-- Inline CSS -->
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('background.webp') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Login Container */
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        /* Logo */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #3f729b; /* Different color */
+        }
+
+        /* Input Fields */
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Login Button */
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3f729b; /* Different color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Button Hover Effect */
+        .login-button:hover {
+            background-color: #2c5c7e; /* Darker shade on hover */
+        }
+
+        /* Footer Text */
+        .footer-text {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* Link Styles */
+        .footer-text a {
+            color: #3f729b; /* Link color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        /* Link Hover Effect */
+        .footer-text a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="logo">MyApp</div>
+        <form action="#" method="post">
+            <input type="text" class="input-field" placeholder="Username" name="username" required>
+            <input type="password" class="input-field" placeholder="Password" name="password" required>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        <div class="footer-text">Don't have an account? <a href="2.html">Sign up</a></div>
+    </div>
+
+</body>
+</html>
